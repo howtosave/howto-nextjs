@@ -1,6 +1,18 @@
 # Howto NextJS
 
-## 
+## TL;DR;
+
+```sh
+# go to app dir
+cd apps/blog-basic
+
+# dev
+yarn dev
+
+# export and serve
+yarn export
+yarn serve
+```
 
 ## Example apps
 
