@@ -5,9 +5,7 @@ describe('# Footer:Components', () => {
   it('renders links', () => {
     render(<Footer />);
 
-    const link = screen.getByRole('link', {
-      name: /powered by/i,
-    });
+    const link = screen.getByText(/copyright/i);
     expect(link).toBeInTheDocument();
   });
 });

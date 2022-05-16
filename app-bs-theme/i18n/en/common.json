@@ -1,0 +1,12 @@
+{
+  "select-theme.current-theme": "The current theme is",
+  "select-theme.light-mode": "Light Mode",
+  "select-theme.dark-mode": "Dark Mode",
+  "select-locale.select-locale": "Select your locale",
+  "footer.privacy-policy": "Privacy Policy",
+  "footer.terms-of-use": "Terms of Use",
+  "change-locale": "Change locale",
+  "to-second-page": "To second page",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server"
+}

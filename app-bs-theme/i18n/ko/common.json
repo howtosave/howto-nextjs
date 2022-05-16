@@ -1,0 +1,11 @@
+{
+  "select-theme.current-theme": "선택된 Theme은",
+  "select-theme.light-mode": "Light 모드",
+  "select-theme.dark-mode": "Dark 모드",
+  "select-locale.select-locale": "Locale 선택",
+  "h1": "A simple example",
+  "change-locale": "Change locale",
+  "to-second-page": "To second page",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server"
+}

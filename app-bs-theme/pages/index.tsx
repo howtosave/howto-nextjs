@@ -1,23 +1,25 @@
 import Head from 'next/head';
-import { Container } from 'react-bootstrap';
-import { Layout } from '~components/Layout';
-import { SelectTheme } from '~components/SelectTheme';
+import { useTranslation, withTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import LandingPageView from '~page-views/Landing';
 
 export default function PageIndex() {
+  const { t } = useTranslation('page-landing');
+
   return (
-    <Layout>
-      <Container className="md-container">
-        <Head>
-          <title>ReactJS with react-bootstrap</title>
-          <link rel="icon" href="/favicon-32x32.png" />
-        </Head>        
-        <Container>
-          <h1>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-          <SelectTheme/>
-        </Container>
-      </Container>
-    </Layout>
+    <>
+      <Head>
+        <title>{t('title')}</title>
+        <link rel="icon" href="/favicon-32x32.png" />
+      </Head>        
+      <LandingPageView />
+    </>
   );
 }
+
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common', 'page-landing']),
+  },
+});

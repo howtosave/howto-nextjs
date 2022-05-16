@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { useTheme } from 'next-themes';
+import SelectThemeView from './views/SelectTheme';
 
-interface SelectThemeProps {
+type SelectThemeProps = {
 }
 
 export const SelectTheme = (props: SelectThemeProps) => {
@@ -12,11 +13,9 @@ export const SelectTheme = (props: SelectThemeProps) => {
   React.useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
-  return (
-    <div>
-      The current theme is: {theme}
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('dark')}>Dark Mode</button>
-    </div>
-  );
+  return <SelectThemeView
+    currentTheme={theme}
+    onClickDarkMode={() => setTheme('dark')}
+    onClickLightMode={() => setTheme('light')}
+  />;
 };

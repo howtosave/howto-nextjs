@@ -6,6 +6,7 @@
       "~containers/*": ["./containers/*"],
       "~lib/*": ["./lib/*"],
       "~pages/*": ["./pages/*"],
+      "~page-views/*": ["./page-views/*"],
       "~test/*": ["./test/*"]
     },
     "target": "es5",
