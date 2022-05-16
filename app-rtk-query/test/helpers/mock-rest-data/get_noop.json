@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "short_text": "short text2"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}

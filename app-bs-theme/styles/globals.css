@@ -1,0 +1,19 @@
+/*@import '~bootstrap/dist/css/bootstrap.min.css';*/
+@import './themes/darkly-bootstrap.css';
+/*@import './themes/cosmo-bootstrap.css';*/
+
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --foreground: white;
+}
+
+.sml-logo {
+  height: 1em;
+  margin-left: 10px;
+}

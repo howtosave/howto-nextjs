@@ -1,0 +1,13 @@
+{
+  "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjUyMzUxNTYxLCJleHAiOjE2NTQ5NDM1NjF9.uNqpyX2cMgUR5SIMeS61RwddJkPPlf7yCOwOumq-4uU",
+  "user": {
+    "id": 1,
+    "username": "test001",
+    "email": "test001@local.host",
+    "provider": "local",
+    "confirmed": true,
+    "blocked": false,
+    "createdAt": "2022-05-12T10:32:41.092Z",
+    "updatedAt": "2022-05-12T10:32:41.092Z"
+  }
+}
